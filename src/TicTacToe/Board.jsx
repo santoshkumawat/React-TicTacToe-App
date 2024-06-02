@@ -65,13 +65,13 @@ const Board = () => {
     <>
       {isGameOver ? (
         <>
-          <h3 className='game-over'>Game Over</h3>
+          <h2 className='game-over'>Game Over</h2>
           {isWinner ? (
             <>
               <Winner winner={isWinner} />
             </>
           ) : (
-            <p>It's a draw</p>
+            <h3>It's a draw</h3>
           )}
           <button className='button resetButton' onClick={() => resetGame()}>
             Play Again
@@ -79,14 +79,14 @@ const Board = () => {
         </>
       ) : (
         <>
-          <h3>
+          <h2>
             Current Player:{" "}
             {isXTurn ? (
               <span className='player-x'>X</span>
             ) : (
               <span className='player-o'>O</span>
             )}
-          </h3>
+          </h2>
           <div className='board-container'>
             <div className='board-row'>
               <Square value={squares[0]} squareOnClick={() => handleClick(0)} />

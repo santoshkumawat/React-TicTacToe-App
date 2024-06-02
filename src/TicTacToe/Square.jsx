@@ -3,7 +3,7 @@ import React from "react";
 const Square = (props) => {
   return (
     <div className='square' onClick={props.squareOnClick}>
-      <h3>{props.value}</h3>
+      <h1>{props.value}</h1>
     </div>
   );
 };
