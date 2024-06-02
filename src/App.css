@@ -9,13 +9,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .board-container {
-  margin-top: 50px !important;
-  margin: auto;
   width: 300px;
   border: 1px solid;
+  margin: 0 0 50px;
 }
 
 .board-row {
@@ -31,4 +31,26 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.button {
+  margin: 20px 0;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid darkgrey;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.player-x {
+  color: rgb(3, 145, 39);
+}
+
+.player-o {
+  color: rgb(0 64 255);
+}
+
+.game-over {
+  color: #f16969;
 }
